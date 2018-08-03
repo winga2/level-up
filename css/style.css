@@ -1,0 +1,130 @@
+        /*ccsvariables*/
+        
+         :root {
+            --primary: #ddd;
+            --dark: #333;
+            --light: #fff;
+            --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+        }
+        
+        html {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--dark);
+        }
+        
+        body {
+            background: #ccc;
+            margin: 20px 50px;
+            line-height: 1.4;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-gap: 20px;
+            width: 400px;
+            margin: auto;
+        }
+        
+        .logo {
+            background: black;
+            width: 100px;
+            height: 100px;
+            color: var(--light);
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 6rem;
+            margin: 10px;
+        }
+        
+        .showcase {
+            grid-area: showcase;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .showcase h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: var(--dark);
+        }
+        /* top-box */
+        
+        .top-box {
+            background: var(--primary);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /* labels */
+        
+        .t1>label {
+            padding-right: 50px;
+        }
+        
+        .t2>label {
+            padding-right: 150px;
+        }
+        
+        .t4>label {
+            padding-right: 200px;
+        }
+        /* input */
+        
+        .t1>input {
+            height: 30px;
+            width: 195px;
+            margin: 5px;
+        }
+        
+        .t2>input {
+            height: 30px;
+            width: 400px;
+            margin: 5px;
+        }
+        
+        .t4>input {
+            height: 30px;
+            width: 400px;
+            margin: 5px;
+        }
+        /* box */
+        
+        .box {
+            background: var(--primary);
+            text-align: center;
+        }
+        
+        .signUp>button {
+            height: 50px;
+            text-align: start;
+            width: 400px;
+            font-size: 2rem;
+            background-color: #2196F3;
+            color: var(--light);
+        }
+        /* footer */
+        
+        footer {
+            margin-top: 3rem;
+            background: var(--dark);
+            color: var(--light);
+            padding: 1rem;
+            text-align: center;
+        }
+        /* media queries */
+        
+        @media(max-width: 700px) {
+            .showcase h1 {
+                font-size: 2.rem;
+            }
+            .wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media(max-width: 500px) {
+            .wrapper {
+                grid-template-areas: 'showcase' 'box' 'top-box';
+            }
+        }
