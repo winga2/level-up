@@ -116,15 +116,15 @@
         
         @media(max-width: 700px) {
             .showcase h1 {
-                font-size: 2.5rem;
+                font-size: 2.rem;
             }
-            .info {
+            .wrapper {
                 grid-template-columns: 1fr;
             }
         }
         
         @media(max-width: 500px) {
-            /* .top-container {
-            grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
-        } */
+            .wrapper {
+                grid-template-areas: 'showcase' 'box' 'top-box';
+            }
         }
