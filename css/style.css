@@ -1,7 +1,7 @@
         /*ccsvariables*/
         
          :root {
-            --primary: #ddd;
+            --primary: #eee;
             --dark: #333;
             --light: #fff;
             --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -15,7 +15,7 @@
         
         body {
             background: #ccc;
-            margin: 20px 50px;
+            margin: 10px 30px;
             line-height: 1.4;
         }
         
@@ -45,8 +45,8 @@
         }
         
         .showcase h1 {
-            font-size: 1.5rem;
-            margin-bottom: 0;
+            font-size: 1.4rem;
+            font-weight: lighter;
             color: var(--dark);
         }
         /* top-box */
@@ -60,14 +60,20 @@
         
         .t1>label {
             padding-right: 50px;
+            font-size: 0.9rem;
+            font-style: lighter;
         }
         
         .t2>label {
             padding-right: 150px;
+            font-size: 0.9rem;
+            font-style: lighter;
         }
         
         .t4>label {
             padding-right: 200px;
+            font-size: 0.9rem;
+            font-style: lighter;
         }
         /* input */
         
@@ -95,18 +101,23 @@
             text-align: center;
         }
         
+        #form1>label {
+            font-size: 1.8rem;
+            font-style: normal;
+        }
+        
         .signUp>button {
             height: 50px;
             text-align: start;
             width: 400px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             background-color: #2196F3;
             color: var(--light);
         }
         /* footer */
         
         footer {
-            margin-top: 3rem;
+            margin-top: 1.5rem;
             background: var(--dark);
             color: var(--light);
             padding: 1rem;
@@ -115,16 +126,57 @@
         /* media queries */
         
         @media(max-width: 700px) {
-            .showcase h1 {
-                font-size: 2.rem;
-            }
             .wrapper {
-                grid-template-columns: 1fr;
+                width: 100%;
+                height: auto;
+                margin: auto;
+                padding: 4px;
             }
-        }
-        
-        @media(max-width: 500px) {
-            .wrapper {
-                grid-template-areas: 'showcase' 'box' 'top-box';
+            .label {
+                float: center;
+            }
+            .top-box {
+                grid-gap: 3px;
+            }
+            .box {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                padding: 4px;
+            }
+            .input {
+                width: 80%;
+                height: auto;
+                margin: auto;
+                padding: 2px;
+            }
+            .input>div {
+                width: 90%;
+                height: auto;
+                margin: auto;
+                padding: 1px;
+            }
+            .t2>input {
+                height: 30px;
+                width: 99%;
+                margin: auto;
+            }
+            .t4>input {
+                height: 30px;
+                width: 99%;
+                margin: auto;
+            }
+            .signUp>button {
+                height: 50px;
+                text-align: start;
+                width: 99%;
+                font-size: 1rem;
+                margin: auto;
+            }
+            .t1>input {
+                height: 30px;
+                width: 99%;
+                margin: auto;
+                padding: 1px;
             }
         }
